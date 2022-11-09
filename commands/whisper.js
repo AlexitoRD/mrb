@@ -5,6 +5,6 @@ module.exports = {
         .setName('whisper')
         .setDescription('The bot will send you a direct message.'),
     async execute(interaction) {
-        await interaction.user.send('>>> \nHere is a list of commands:');
+        await interaction.user.send('>>> \nHere is a list of commands:\n/play "File name here"');
     },
 };

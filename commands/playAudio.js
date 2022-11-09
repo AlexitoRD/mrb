@@ -2,9 +2,8 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('ping')
-        .setDescription('Replies with Pong!'),
+        .setName('play')
+        .setDescription('Plays the chosen sound file'),
     async execute(interaction) {
-        await interaction.reply('Pong!');
     },
 };
